@@ -3,27 +3,39 @@
 
 <head>
   <link rel="stylesheet" href="styles.css">
+  <title> Rock Paper Scissors Game </title>
 </head>
 
 <body>
   <aside class="human-container">
     <h2>Human 🥷🏻</h2>
-    <p> Wins: 0 </p>
+    <h4>Wins: 0</h4>
   </aside>
   <section class="gameplay-container">
     <h1>Rock, Paper, Scissors</h1>
     <h2> Choose your game! </h2>
-    <section class="difficultyButtons">
-      <button id="classic-btn">Classic <br /><br />🗿 beats ✂️ <br /> ✂️ beats 📜 <br /> 📜 beats 🗿 </button>
-      <button id="difficult-btn"> Difficult <br /><br />🗿 beats ✂️ <br /> ✂️ beats 📜 <br /> 📜 beats 🗿 </button>
+    <section class="view difficulty-buttons hidden">
+      <button id="classicBtn">Classic <br /><br />🗿 beats ✂️ <br /> ✂️ beats 📜 <br /> 📜 beats 🗿 </button>
+      <button id="difficultBtn"> Difficult <br /><br />🗿 beats ✂️ <br /> ✂️ beats 📜 <br /> 📜 beats 🗿 </button>
     </section>
-    <section class="view icon-container hidden">
+    <section class="view icon-statement hidden">
       <h3>Choose your icon!</h3>
+    </section>
+    <section class="icon-container">
+      <figure class="rock-icon">
+        <img class="rock-icon" src="assets/rock.png" alt="">
+      </figure>
+      <figure class="paper-icon">
+        <img class="paper-icon" src="assets/paper.png" alt="">
+      </figure>
+      <figure class="scissors-icon">
+        <img class="scissors-icon" src="assets/scissors.png" alt="">
+      </figure>
     </section>
   </section>
   <aside class="computer-container">
     <h2>Computer 🖥</h2>
-    <p> Wins: 0 </p>
+    <h4>Wins: 0</h4>
   </aside>
 </body>
 <script src="./scripts.js"></script>

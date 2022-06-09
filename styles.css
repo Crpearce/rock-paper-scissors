@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  border: 1px solid red;
 }
 
 body {
@@ -8,7 +9,6 @@ body {
   height: 100%;
   width: 100%;
   margin: 0px;
-  margin-left: 30px;
   font-family: Comic, fantasy;
 }
 
@@ -27,7 +27,7 @@ h3 {
 }
 
 aside {
-  width: 10%;
+  width: 15%;
   height: auto;
   border: 2px;
   border-color: #000000;
@@ -37,6 +37,7 @@ aside {
   background-image: linear-gradient(to bottom, white, grey, black);
   overflow: auto;
 }
+
 .gameplay-container {
   display: flex;
   align-items: center;
@@ -75,4 +76,25 @@ button:hover {
 
 .computer-container {
   border-left-style: solid;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 400px;
+}
+
+.rock-icon {
+  height: 250px;
+  weight: 250px;
+}
+
+.paper-icon {
+  height: 250px;
+  weight: 250px;
+}
+
+.scissors-icon {
+  height: 250px;
+  weight: 250px;
 }
