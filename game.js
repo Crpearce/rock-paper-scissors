@@ -1,4 +1,4 @@
-var Player = require('./player');
+var rpsValues = ['Rock', 'Paper', 'Scissors']
 
 class Game {
   constructor() {
@@ -7,6 +7,8 @@ class Game {
     this.draw = true
     this.reset = true
   }
-}
 
-module.exports = Game;
+  function randomSelection(rpsValues) {
+    var randomSelection = this.rpsValues[Math.floor(Math.random()*this.rpsValues.length)]
+  }
+}
