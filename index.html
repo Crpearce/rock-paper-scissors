@@ -9,12 +9,13 @@
 <body>
   <aside class="human-container">
     <h2>Human 🥷🏻</h2>
-    <h4>Wins: 0</h4>
+    <h4>Wins:</h4>
+    <div id="user-score">0</div>
   </aside>
-  <section class="gameplay-container">
+  <main class="gameplay-container">
     <h1>Rock, Paper, Scissors</h1>
-    <h2> Choose your game! </h2>
-    <section class="view difficulty-buttons hidden">
+    <h2 class="view game-option-text hidden"> Choose your game! </h2>
+    <section class="difficulty-buttons">
       <button id="classicBtn">Classic <br /><br />🗿 beats ✂️ <br /> ✂️ beats 📜 <br /> 📜 beats 🗿 </button>
       <button id="difficultBtn"> Difficult <br /><br />🗿 beats ✂️ <br /> ✂️ beats 📜 <br /> 📜 beats 🗿 </button>
     </section>
@@ -22,22 +23,31 @@
       <h3>Choose your icon!</h3>
     </section>
     <section class="icon-container">
-      <figure class="rock-icon">
+      <figure class="view rock-icon hidden" id="rock">
         <img class="rock-icon" src="assets/rock.png" alt="">
       </figure>
-      <figure class="paper-icon">
+      <figure class="view paper-icon hidden" id="paper">
         <img class="paper-icon" src="assets/paper.png" alt="">
       </figure>
-      <figure class="scissors-icon">
+      <figure class="view scissors-icon hidden" id="scissors">
         <img class="scissors-icon" src="assets/scissors.png" alt="">
       </figure>
+      <figure class="view alien-icon hidden" id="alien">
+        <img class="alien-icon" src="assets/alien.png" alt="">
+      </figure>
+      <figure class="view lizard-icon hidden" id="scissors">
+        <img class="lizard-icon" src="assets/lizard.png" alt="">
+      </figure>
     </section>
-  </section>
+  </main>
   <aside class="computer-container">
     <h2>Computer 🖥</h2>
-    <h4>Wins: 0</h4>
+    <h4>Wins:</h4>
+    <div id="computer-score">0</div>
   </aside>
+  <script src="./main.js"></script>
+  <script src="./player.js"></script>
+  <script src="./game.js"></script>
 </body>
-<script src="./scripts.js"></script>
 
 </html>
