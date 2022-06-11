@@ -1,5 +1,5 @@
 class Player {
-  constructor(thisPlayer) {
+  constructor(createPlayer) {
     this.name = createPlayer.name
     this.emoji = createPlayer.emoji
     this.makePick

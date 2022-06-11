@@ -11,14 +11,25 @@ var scissorsIcon = document.querySelector('.scissors-icon')
 var alienIcon = document.querySelector('.alien-icon')
 var lizardIcon = document.querySelector('.lizard-icon')
 
-// // global variables
-var computerChoice
+// var game = new Game()
+
 
 //event listeners
 classicBtn.addEventListener('click', startEasyGame)
 difficultBtn.addEventListener('click', startDifficultGame)
 //changeGameBtn.addEventListener('click',resetGame)
-
+function createPlayers() {
+  var human = new Player({
+    name: 'Human',
+    emoji: '🥷🏻'
+  })
+  var computer = new Player({
+    name: 'Computer',
+    emoji: '💻'
+  })
+  game.players.push(human)
+  game.players.push(computer)
+  }
 function startEasyGame() {
   iconStatement.classList.remove("hidden")
   classicBtn.classList.add("hidden")
@@ -40,3 +51,24 @@ function startDifficultGame() {
   alienIcon.classList.remove("hidden")
   lizardIcon.classList.remove("hidden")
 }
+
+function assignComputerChoice() {
+  var computerChoice;
+  if (game.skillLevel === 'classic') {
+    computerChoice = getRandomInt(3);
+  } else {
+    computerChoice = getRandomInt(5);
+  };
+
+  if (computerChoice === 0) {
+    game.players[1].choice = 'Rock';
+  } else if (computerChoice === 1) {
+    game.players[1].choice = 'Paper';
+  } else if (computerChoice === 2) {
+    game.players[1].choice = 'Scissors';
+  } else if (computerChoice === 3) {
+    game.players[1].choice = 'Lizard';
+  } else {
+    game.players[1].choice = 'Alien';
+  };
+};
