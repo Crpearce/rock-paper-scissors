@@ -1,3 +1,4 @@
+// querySelectors
 var classicBtn = document.querySelector('#classicBtn')
 var difficultBtn = document.querySelector('#difficultBtn')
 var humanScore = document.querySelector('#user-score')
@@ -10,9 +11,13 @@ var scissorsIcon = document.querySelector('.scissors-icon')
 var alienIcon = document.querySelector('.alien-icon')
 var lizardIcon = document.querySelector('.lizard-icon')
 
+// // global variables
+var computerChoice
+
+//event listeners
 classicBtn.addEventListener('click', startEasyGame)
 difficultBtn.addEventListener('click', startDifficultGame)
-
+//changeGameBtn.addEventListener('click',resetGame)
 
 function startEasyGame() {
   iconStatement.classList.remove("hidden")

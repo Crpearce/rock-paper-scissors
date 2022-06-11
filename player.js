@@ -1,12 +1,8 @@
-var Game = require('./game');
-
 class Player {
-  constructor(name) {
-    this.name = `Human` || `Computer`
-    this.token = 🥷🏻 || 💻
-    this.takeTurn = true
+  constructor(thisPlayer) {
+    this.name = createPlayer.name
+    this.emoji = createPlayer.emoji
+    this.makePick
     this.wins = 0
   }
 }
-
-module.exports = Player;
