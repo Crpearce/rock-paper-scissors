@@ -1,8 +1,8 @@
 class Player {
-  constructor(createPlayer) {
-    this.name = createPlayer.name
-    this.emoji = createPlayer.emoji
-    this.makePick
+  constructor(thisPlayer) {
+    this.name = thisPlayer.name
+    this.emoji = thisPlayer.emoji
+    this.choice
     this.wins = 0
   }
 }

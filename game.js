@@ -2,8 +2,8 @@ class Game {
   constructor() {
     this.players = []
     this.skillLevel
-    this.turn
     this.winner
+    this.turn
   }
   findWinner() {
     if (this.players[0].selection === this.players[1].selection) {
@@ -25,5 +25,8 @@ class Game {
       this.players[1].wins++;
       this.winner = this.players[1].name;
     }
+  }
+  changeGame() {
+    resetGame()
   }
 }
