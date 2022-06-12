@@ -10,6 +10,7 @@ body {
   width: 100%;
   margin: 0px;
   font-family: Comic, fantasy;
+  border: 1px solid red;
 }
 
 .hidden {
@@ -40,6 +41,13 @@ aside {
   overflow: auto;
 }
 
+.change-game {
+  height: 75px;
+  width: 150px;
+  margin-top: 150%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .gameplay-container {
   display: flex;
   align-items: center;
@@ -54,8 +62,8 @@ aside {
 
 button {
   display: block;
-  height: 200px;
-  width: 125px;
+  height: 185px;
+  width: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 50px;
   margin-top: 40px;
@@ -89,27 +97,7 @@ button:hover {
   overflow: auto;
 }
 
-.rock-icon {
-  height: 60%;
-  weight: 60%;
-}
-
-.paper-icon {
-  height: 60%;
-  weight: 60%;
-}
-
-.scissors-icon {
-  height: 60%;
-  weight: 60%;
-}
-
-.alien-icon {
-  height: 60%;
-  weight: 60%;
-}
-
-.lizard-icon {
+img {
   height: 60%;
   weight: 60%;
 }
