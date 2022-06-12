@@ -8,9 +8,8 @@
 
 <body>
   <aside class="human-container">
-    <h2>Human 🥷🏻</h2>
-    <h4>Wins:</h4>
-    <div id="user-score">0</div>
+    <h2 id="userInfo"></h2>
+    <div id="user-score"></div>
     <button class="view change-game hidden"> Reset Game </button>
   </aside>
   <main class="gameplay-container">
@@ -34,18 +33,17 @@
       <h3>Choose your icon!</h3>
     </section>
     <section class="hidden icon-container view">
-        <img id="rockIcon" src="assets/rock.png" alt=""class="hidden">
-        <img id="paperIcon" src="assets/paper.png" alt=""class="hidden">
-        <img id="scissorsIcon" src="assets/scissors.png" alt=""class="hidden">
-        <img id="alienIcon" src="assets/alien.png" alt=""class="hidden">
-        <img id="lizardIcon" src="assets/lizard.png" alt=""class="hidden">
+      <img id="rockIcon" src="assets/rock.png" alt="" class="hidden">
+      <img id="paperIcon" src="assets/paper.png" alt="" class="hidden">
+      <img id="scissorsIcon" src="assets/scissors.png" alt="" class="hidden">
+      <img id="alienIcon" src="assets/alien.png" alt="" class="hidden">
+      <img id="lizardIcon" src="assets/lizard.png" alt="" class="hidden">
       </figure>
     </section>
   </main>
   <aside class="computer-container">
-    <h2>Computer 🖥</h2>
-    <h4>Wins:</h4>
-    <div id="computer-score">0</div>
+    <h2 id="computerInfo"></h2>
+    <div id="computer-score"></div>
   </aside>
   <script src="./game.js"></script>
   <script src="./player.js"></script>
