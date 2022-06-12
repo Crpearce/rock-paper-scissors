@@ -37,10 +37,18 @@ function createPlayers() {
 }
 
 window.addEventListener('load', createPlayers);
-
+window.addEventListener('load', createDynamicAside)
 function createDynamicAside() {
-
+  userInfo.innerHTML = `
+  <h2>${game.players[0].name}${game.players[0].emoji}</h2>`
+  userScore.innerHTML = `
+  <div>Wins: ${game.players[0].wins}</div>`
+  computerInfo.innerHTML = `
+  <h2>${game.players[1].name}${game.players[1].emoji}</h2>`
+  computerScore.innerHTML = `
+  <div>Wins: ${game.players[1].wins}</div>`
 }
+
 function showEasyGame() {
   show(iconStatement)
   hide(classicBtn)
