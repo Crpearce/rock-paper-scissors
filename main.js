@@ -2,7 +2,6 @@
 var classicBtn = document.querySelector('#classicBtn')
 var difficultBtn = document.querySelector('#difficultBtn')
 var changeGameBtn = document.querySelector('.change-game')
-var humanScore = document.querySelector('#user-score')
 var gameOptionText = document.querySelector('.game-option-text')
 var computerScore = document.querySelector('#computer-score')
 var iconStatement = document.querySelector('.icon-statement')
@@ -12,6 +11,10 @@ var paperIcon = document.querySelector('#paperIcon')
 var scissorsIcon = document.querySelector('#scissorsIcon')
 var alienIcon = document.querySelector('#alienIcon')
 var lizardIcon = document.querySelector('#lizardIcon')
+var userInfo = document.querySelector('#userInfo')
+var userScore = document.querySelector('#userScore')
+var computerInfo = document.querySelector('#computerInfo')
+var computerScore = document.querySelector('#computerScore')
 
 //event listeners
 classicBtn.addEventListener('click', showEasyGame)
@@ -32,8 +35,12 @@ function createPlayers() {
   game.players.push(human)
   game.players.push(computer)
 }
+
 window.addEventListener('load', createPlayers);
 
+function createDynamicAside() {
+
+}
 function showEasyGame() {
   show(iconStatement)
   hide(classicBtn)

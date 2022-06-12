@@ -17,7 +17,7 @@ class Game {
       this.players[0].choice === 'lizard' && this.players[1].choice === 'paper' ||
       this.players[0].choice === 'lizard' && this.players[1].choice === 'alien' ||
       this.players[0].choice === 'alien' && this.players[1].choice === 'scissors' ||
-      this.players[0].choice === 'Rock' && this.players[1].choice === 'rock'
+      this.players[0].choice === 'alien' && this.players[1].choice === 'rock'
     ) {
       this.players[0].wins++
       this.winner = this.players[0].name
