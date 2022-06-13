@@ -103,14 +103,6 @@ data {
   weight: 50%;
 }
 
-data {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 50%;
-  weight: 50%;
-}
-
 img {
     height: 50%;
     weight: 50%;

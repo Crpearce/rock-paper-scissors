@@ -91,6 +91,29 @@ function startGame() {
   assignComputerChoice()
 }
 
+function showResultDisplay() {
+  createDynamicAside()
+  show(iconStatement)
+  hide(rockIcon)
+  hide(paperIcon)
+  hide(scissorsIcon)
+  hide(alienIcon)
+  hide(lizardIcon)
+  hide(classicBtn)
+  hide(difficultBtn)
+
+  if (game.winner === 'draw') {
+  iconStatement.innerText = `DRAW `;
+  showDraw()
+} else if (game.winner === game.players[0].name) {
+  iconStatement.innerText = `${game.players[0].emoji} ${game.players[0].name} won this round! ${game.players[0].emoji}`;
+  showWinner()
+} else {
+  iconStatement.innerText = `${game.players[1].emoji} ${game.players[1].name} won this round! ${game.players[1].emoji}`;
+  showWinner()
+}
+}
+
 function updateClassicGame() {
   game.skillLevel = 'classic'
   showClassicGame()
