@@ -123,13 +123,15 @@ function assignComputerChoice() {
 }
 
 function updateFighterChoice(e) {
+  var value = e.target.parentElement.value
   game.players[0].choice = e.target.parentElement.value
-    console.log(game.players[0].choice)
-    determineWinner()
+  if (value) {
+    game.determineWinner()
+  }
 }
 
 function showDraw() {
-  if (game.players[0].choice.id === 'rock') {
+  if (game.players[0].choice === 'rock') {
     show(rockIcon)
   } else if (game.players[0].choice === 'paper') {
     show(paperIcon)
