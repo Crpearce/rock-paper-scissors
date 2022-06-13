@@ -52,11 +52,8 @@ function createDynamicAside() {
 }
 
 function showClassicGame() {
-  assignComputerChoice()
+  startGame()
   show(iconStatement)
-  hide(classicBtn)
-  hide(difficultBtn)
-  hide(gameOptionText)
   show(changeGameBtn)
   show(rockIcon)
   show(paperIcon)
@@ -64,11 +61,8 @@ function showClassicGame() {
 }
 
 function showDifficultGame() {
-  assignComputerChoice()
+  startGame()
   show(iconStatement)
-  hide(classicBtn)
-  hide(difficultBtn)
-  hide(gameOptionText)
   show(rockIcon)
   show(paperIcon)
   show(scissorsIcon)
@@ -94,6 +88,7 @@ function startGame() {
   hide(classicBtn)
   hide(difficultBtn)
   hide(gameOptionText)
+  assignComputerChoice()
 }
 
 function updateClassicGame() {
@@ -107,7 +102,7 @@ function updateDifficultGame() {
 }
 
 function assignComputerChoice() {
-  var computerChoice;
+  var computerChoice
   if (game.skillLevel === 'classic') {
     computerChoice = getRandomInt(3)
   } else {
@@ -127,9 +122,10 @@ function assignComputerChoice() {
   console.log(game.players[1].choice)
 }
 
-function updateFighterChoice() {
-  game.players[0].choice = event.target.closest("img")
+function updateFighterChoice(e) {
+  game.players[0].choice = e.target.parentElement.value
     console.log(game.players[0].choice)
+    determineWinner()
 }
 
 function showDraw() {
@@ -169,8 +165,8 @@ function showWinner() {
     show(lizardIcon)
   } else {
     show(alienIcon)
-  };
-};
+  }
+}
 
 function show(e) {
   e.classList.remove('hidden')

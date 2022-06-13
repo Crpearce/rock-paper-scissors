@@ -5,7 +5,7 @@ class Game {
     this.winner
     this.turn
   }
-  findWinner() {
+  determineWinner() {
     if (
       this.players[0].selection === this.players[1].selection) {
       this.winner = 'draw'
@@ -24,8 +24,8 @@ class Game {
       this.players[0].wins++
       this.winner = this.players[0].name
     } else {
-      this.players[1].wins++;
-      this.winner = this.players[1].name;
+      this.players[1].wins++
+      this.winner = this.players[1].name
     }
   }
   changeGame() {
