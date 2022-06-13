@@ -58,6 +58,7 @@ function showClassicGame() {
   show(rockIcon)
   show(paperIcon)
   show(scissorsIcon)
+  updateFighterText()
 }
 
 function showDifficultGame() {
@@ -69,6 +70,7 @@ function showDifficultGame() {
   show(alienIcon)
   show(lizardIcon)
   show(changeGameBtn)
+  updateFighterText()
 }
 
 function resetGame() {
@@ -82,6 +84,8 @@ function resetGame() {
   show(difficultBtn)
   hide(iconStatement)
   show(gameOptionText)
+  resetWinCounter()
+  createDynamicAside()
 }
 
 function startGame() {
@@ -103,15 +107,20 @@ function showResultDisplay() {
   hide(difficultBtn)
 
   if (game.winner === 'draw') {
-  iconStatement.innerText = `DRAW `;
-  showDraw()
-} else if (game.winner === game.players[0].name) {
-  iconStatement.innerText = `${game.players[0].emoji} ${game.players[0].name} won this round! ${game.players[0].emoji}`;
-  showWinner()
-} else {
-  iconStatement.innerText = `${game.players[1].emoji} ${game.players[1].name} won this round! ${game.players[1].emoji}`;
-  showWinner()
+    iconStatement.innerText = `DRAW `;
+    showDraw()
+  } else if (game.winner === game.players[0].name) {
+    iconStatement.innerText = `${game.players[0].emoji} ${game.players[0].name} won this round! ${game.players[0].emoji}`;
+    showWinner()
+  } else {
+    iconStatement.innerText = `${game.players[1].emoji} ${game.players[1].name} won this round! ${game.players[1].emoji}`;
+    showWinner()
+  }
 }
+
+function resetWinCounter() {
+  game.players[0].wins = 0;
+  game.players[1].wins = 0;
 }
 
 function updateClassicGame() {
@@ -165,6 +174,7 @@ function showDraw() {
   } else {
     show(alienIcon)
   }
+  timeout()
 }
 
 function showWinner() {
@@ -191,6 +201,27 @@ function showWinner() {
   } else {
     show(alienIcon)
   }
+  timeout()
+}
+
+function displayGameReset() {
+  document.getElementById('mainScreen').style.pointerEvents = 'auto';
+  if (game.skillLevel === 'classic') {
+    updateClassicGame()
+  } else {
+    updateDifficultGame()
+  }
+}
+
+function timeout() {
+  document.getElementById('mainScreen').style.pointerEvents = 'none';
+  var timeout = setTimeout(function() {
+    displayGameReset();
+  }, 2000);
+}
+
+function updateFighterText() {
+  iconStatement.innerText = `Choose your fighter!`
 }
 
 function show(e) {
