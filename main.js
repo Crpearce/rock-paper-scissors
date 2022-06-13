@@ -15,10 +15,14 @@ var userInfo = document.querySelector('#userInfo')
 var userScore = document.querySelector('#userScore')
 var computerInfo = document.querySelector('#computerInfo')
 var computerScore = document.querySelector('#computerScore')
+var userFighterChoice = document.querySelector('#fighterChoice')
 
 //event listeners
-classicBtn.addEventListener('click', showEasyGame)
-difficultBtn.addEventListener('click', showDifficultGame)
+window.addEventListener('load', createPlayers);
+window.addEventListener('load', createDynamicAside)
+userFighterChoice = addEventListener('click', updateFighterChoice)
+classicBtn.addEventListener('click', updateClassicGame)
+difficultBtn.addEventListener('click', updateDifficultGame)
 changeGameBtn.addEventListener('click', resetGame)
 
 var game = new Game()
@@ -36,20 +40,19 @@ function createPlayers() {
   game.players.push(computer)
 }
 
-window.addEventListener('load', createPlayers);
-window.addEventListener('load', createDynamicAside)
 function createDynamicAside() {
   userInfo.innerHTML = `
-  <h2>${game.players[0].name}${game.players[0].emoji}</h2>`
+  <h2>${game.players[0].name} ${game.players[0].emoji}</h2>`
   userScore.innerHTML = `
   <div>Wins: ${game.players[0].wins}</div>`
   computerInfo.innerHTML = `
-  <h2>${game.players[1].name}${game.players[1].emoji}</h2>`
+  <h2>${game.players[1].name} ${game.players[1].emoji}</h2>`
   computerScore.innerHTML = `
   <div>Wins: ${game.players[1].wins}</div>`
 }
 
-function showEasyGame() {
+function showClassicGame() {
+  assignComputerChoice()
   show(iconStatement)
   hide(classicBtn)
   hide(difficultBtn)
@@ -61,6 +64,7 @@ function showEasyGame() {
 }
 
 function showDifficultGame() {
+  assignComputerChoice()
   show(iconStatement)
   hide(classicBtn)
   hide(difficultBtn)
@@ -86,6 +90,22 @@ function resetGame() {
   show(gameOptionText)
 }
 
+function startGame() {
+  hide(classicBtn)
+  hide(difficultBtn)
+  hide(gameOptionText)
+}
+
+function updateClassicGame() {
+  game.skillLevel = 'classic'
+  showClassicGame()
+}
+
+function updateDifficultGame() {
+  game.skillLevel = 'difficult'
+  showDifficultGame()
+}
+
 function assignComputerChoice() {
   var computerChoice;
   if (game.skillLevel === 'classic') {
@@ -94,17 +114,63 @@ function assignComputerChoice() {
     computerChoice = getRandomInt(5)
   }
   if (computerChoice === 0) {
-    game.players[1].choice = 'Rock'
+    game.players[1].choice = 'rock'
   } else if (computerChoice === 1) {
-    game.players[1].choice = 'Paper'
+    game.players[1].choice = 'paper'
   } else if (computerChoice === 2) {
-    game.players[1].choice = 'Scissors'
+    game.players[1].choice = 'scissors'
   } else if (computerChoice === 3) {
-    game.players[1].choice = 'Lizard'
+    game.players[1].choice = 'lizard'
   } else {
-    game.players[1].choice = 'Alien'
+    game.players[1].choice = 'alien'
+  }
+  console.log(game.players[1].choice)
+}
+
+function updateFighterChoice() {
+  game.players[0].choice = event.target.closest("img")
+    console.log(game.players[0].choice)
+}
+
+function showDraw() {
+  if (game.players[0].choice.id === 'rock') {
+    show(rockIcon)
+  } else if (game.players[0].choice === 'paper') {
+    show(paperIcon)
+  } else if (game.players[0].choice === 'scissors') {
+    show(scissorsIcon)
+  } else if (game.players[0].choice === 'lizard') {
+    show(lizardIcon)
+  } else {
+    show(alienIcon)
   }
 }
+
+function showWinner() {
+  if (game.players[0].choice === 'rock') {
+    show(rockIcon)
+  } else if (game.players[0].choice === 'paper') {
+    show(paperIcon)
+  } else if (game.players[0].choice === 'scissors') {
+    show(scissorsIcon)
+  } else if (game.players[0].choice === 'lizard') {
+    show(lizardIcon)
+  } else {
+    show(alienIcon)
+  }
+
+  if (game.players[1].choice === 'rock') {
+    show(rockIcon)
+  } else if (game.players[1].choice === 'paper') {
+    show(paperIcon)
+  } else if (game.players[1].choice === 'scissors') {
+    show(scissorsIcon)
+  } else if (game.players[1].choice === 'lizard') {
+    show(lizardIcon)
+  } else {
+    show(alienIcon)
+  };
+};
 
 function show(e) {
   e.classList.remove('hidden')
@@ -112,4 +178,8 @@ function show(e) {
 
 function hide(e) {
   e.classList.add('hidden')
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
