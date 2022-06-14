@@ -33,6 +33,3 @@ class Game {
     resetGame()
   }
 }
-
-
-//need to add a board reset function or a timeout function for the end of this function
