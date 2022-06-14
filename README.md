@@ -6,7 +6,7 @@
 The project spec & rubric can be found [here!](https://frontend.turing.edu/projects/module-1/rock-paper-scissors-solo-v2.html)
 
 ## Deployed Page
-Visit the published [site!](https://Crpearce.github.io/rock-paper-scissors/)
+Visit the published [site!](https://htmlpreview.github.io/?https://github.com/Crpearce/rock-paper-scissors/blob/main/index.html)
 
 ## Features
   When you visit the site you will be greeted with the name of the game, two buttons giving the player the ability to choose their own difficulty, and two dynamic sides that will generate the players and win counter feater. Users can get the game going by clicking on the button for the game they would like to play.
