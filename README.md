@@ -12,7 +12,10 @@ Visit the published [site!](https://Crpearce.github.io/rock-paper-scissors/)
   When you visit the site you will be greeted with the name of the game, two buttons giving the player the ability to choose their own difficulty, and two dynamic sides that will generate the players and win counter feater. Users can get the game going by clicking on the button for the game they would like to play.
 ![Home Page](assets/mainScreen.png)
 
-  After a game choice has been made, the user is presented with a row of "fighters" that they can pick from.
+  After a game choice has been made, the user is presented with a row of "fighters" that they can pick from. 
+ ![Icon Choice](assets/chooseYourFighter.png)
+ 
+ The user choice is compaired to the randomly generated computer "fighter" choice and a win is tallied for the user with the winning icon.  
  ![Icon Choice](assets/chooseYourFighter.png)
 ## Contributors
 This website was built by a front end engineering student with the [Turing School of Software and Design](https://turing.edu/). 
