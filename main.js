@@ -107,20 +107,20 @@ function showResultDisplay() {
   hide(difficultBtn)
 
   if (game.winner === 'draw') {
-    iconStatement.innerText = `😭 It's a draw! 😭 `;
+    iconStatement.innerText = `😭 It's a draw! 😭`
     showDraw()
   } else if (game.winner === game.players[0].name) {
-    iconStatement.innerText = `${game.players[0].emoji} ${game.players[0].name} won this round! ${game.players[0].emoji}`;
+    iconStatement.innerText = `${game.players[0].emoji} ${game.players[0].name} won this round! ${game.players[0].emoji}`
     showWinner()
   } else {
-    iconStatement.innerText = `${game.players[1].emoji} ${game.players[1].name} won this round! ${game.players[1].emoji}`;
+    iconStatement.innerText = `${game.players[1].emoji} ${game.players[1].name} won this round! ${game.players[1].emoji}`
     showWinner()
   }
 }
 
 function resetWinCounter() {
-  game.players[0].wins = 0;
-  game.players[1].wins = 0;
+  game.players[0].wins = 0
+  game.players[1].wins = 0
 }
 
 function updateClassicGame() {
@@ -232,5 +232,5 @@ function hide(e) {
 }
 
 function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
+  return Math.floor(Math.random() * max)
 }
