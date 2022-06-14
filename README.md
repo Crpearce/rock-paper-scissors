@@ -1,7 +1,7 @@
 # Rock Paper Scissors
   
 ## Introduction
-This project was to create a rock paper scissors game that would rely on a user selection and a randomly generated computer selection to establish your 'fighters'. By creating both a player(player.js) and game(game.js) class, this project continued to build on our mod 1 fundamentals as we connected these data models to the DOM. The standard rock, paper, scissors version of the game can be started by clicking the classic button, or a difficult version of the game with five fighters can be started with a click  on its button.
+  This project was to create a rock paper scissors game that would rely on a user selection and a randomly generated computer selection to establish your 'fighters'. By creating both a player(player.js) and game(game.js) class, this project continued to build on our mod 1 fundamentals as we connected these data models to the DOM. The standard rock, paper, scissors version of the game can be started by clicking the classic button, or a difficult version of the game with five fighters can be started with a click  on its button.
 
 The project spec & rubric can be found [here!](https://frontend.turing.edu/projects/module-1/rock-paper-scissors-solo-v2.html)
 
@@ -9,12 +9,8 @@ The project spec & rubric can be found [here!](https://frontend.turing.edu/proje
 Visit the published [site!](https://Crpearce.github.io/rock-paper-scissors/)
 
 ## Features
-When you visit the ColoRandom site you will be greeted with the name of the game, two buttons giving the player the ability to choose their own difficulty, and two dynamic sides that will generate the players and win counter feater. Users can get the game going by clicking on the button for the game they would like to play.
+  When you visit the site you will be greeted with the name of the game, two buttons giving the player the ability to choose their own difficulty, and two dynamic sides that will generate the players and win counter feater. Users can get the game going by clicking on the button for the game they would like to play.
 ![Home Page](assets/mainScreen.png)
-
-When you first visit the ColoRandom site you will be greeted with the title, a displayed palette of five colors that is generated at random using a combination of 16 letters and numbers that make up hex codes (A, B, C, D, E, F, 0-9), and then the hex code and lock symbol are displayed below the corresponding color. Users can also choose to “lock” a color by clicking the lock/unlock icon next to the hex code for a specific color, which will keep that color(s) 'locked' as a new palette of colors is generated.
-
- ![Home Page](assets/colorandom-mainpage.png)
 ## Contributors
 This website was built by a front end engineering student with the [Turing School of Software and Design](https://turing.edu/). 
   - [Colby Pearce](https://github.com/Crpearce)
