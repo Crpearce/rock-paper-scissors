@@ -11,6 +11,10 @@ Visit the published [site!](https://Crpearce.github.io/rock-paper-scissors/)
 ## Features
 When you visit the ColoRandom site you will be greeted with the name of the game, two buttons giving the player the ability to choose their own difficulty, and two dynamic sides that will generate the players and win counter feater. Users can get the game going by clicking on the button for the game they would like to play.
 ![Home Page](assets/mainScreen.png)
+
+When you first visit the ColoRandom site you will be greeted with the title, a displayed palette of five colors that is generated at random using a combination of 16 letters and numbers that make up hex codes (A, B, C, D, E, F, 0-9), and then the hex code and lock symbol are displayed below the corresponding color. Users can also choose to “lock” a color by clicking the lock/unlock icon next to the hex code for a specific color, which will keep that color(s) 'locked' as a new palette of colors is generated.
+
+ ![Home Page](assets/colorandom-mainpage.png)
 ## Contributors
 This website was built by a front end engineering student with the [Turing School of Software and Design](https://turing.edu/). 
   - [Colby Pearce](https://github.com/Crpearce)
