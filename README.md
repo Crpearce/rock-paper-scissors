@@ -1,7 +1,7 @@
 # Rock Paper Scissors
   
 ## Introduction
-  This project was to create a rock paper scissors game that would rely on a user selection and a randomly generated computer selection to establish your 'fighters'. By creating both a player(player.js) and game(game.js) class, this project continued to build on our mod 1 fundamentals as we connected these data models to the DOM. The standard rock, paper, scissors version of the game can be started by clicking the classic button, or a difficult version of the game with five fighters can be started with a click  on its button.
+  This project was to create a rock paper scissors game that would rely on a user selection and a randomly generated computer selection to establish your 'fighters'. By creating both a player(player.js) and game(game.js) class, this project continued to build on our mod 1 fundamentals as we connected these data models to the DOM via our main.js file. The standard rock, paper, scissors version of the game can be started by clicking the classic button, or a difficult version of the game with five fighters can be started with a click  on its button.
 
 The project spec & rubric can be found [here!](https://frontend.turing.edu/projects/module-1/rock-paper-scissors-solo-v2.html)
 
