@@ -9,7 +9,6 @@ class Game {
     if (
       this.players[0].choice === this.players[1].choice) {
       this.winner = 'draw'
-      console.log('draw')
     } else if (
       this.players[0].choice === 'rock' && this.players[1].choice === 'scissors' ||
       this.players[0].choice === 'rock' && this.players[1].choice === 'lizard' ||
@@ -23,11 +22,9 @@ class Game {
       this.players[0].choice === 'alien' && this.players[1].choice === 'rock'
     ) {
       this.players[0].wins++
-      console.log('winning selection')
       this.winner = this.players[0].name
     } else {
       this.players[1].wins++
-      console.log('loser')
       this.winner = this.players[1].name
     }
   showResultDisplay()

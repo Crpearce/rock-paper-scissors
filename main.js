@@ -107,7 +107,7 @@ function showResultDisplay() {
   hide(difficultBtn)
 
   if (game.winner === 'draw') {
-    iconStatement.innerText = `DRAW `;
+    iconStatement.innerText = `😭 It's a draw! 😭 `;
     showDraw()
   } else if (game.winner === game.players[0].name) {
     iconStatement.innerText = `${game.players[0].emoji} ${game.players[0].name} won this round! ${game.players[0].emoji}`;

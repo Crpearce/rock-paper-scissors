@@ -1,6 +1,5 @@
 html {
   height: 100%;
-  border: 1px solid red;
 }
 
 body {
@@ -10,7 +9,6 @@ body {
   width: 100%;
   margin: 0px;
   font-family: Comic, fantasy;
-  border: 1px solid red;
 }
 
 .hidden {
@@ -26,10 +24,6 @@ h2 {
   color: white;
   text-shadow: 3px 3px 5px #000000;
   font-size: 30px;
-}
-
-h3 {
-  font-size: 50px;
 }
 
 aside {
@@ -48,7 +42,7 @@ aside {
   height: 75px;
   width: 150px;
   margin-top: 150%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .gameplay-container {
@@ -71,6 +65,11 @@ aside {
   border-left-style: solid;
 }
 
+.icon-statement {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
 .icon-container {
   display: flex;
   flex-direction: row;
@@ -85,10 +84,10 @@ button {
   background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 50px;
   margin-top: 40px;
-  white-space: normal;
   font-family: Comic, fantasy;
   font-style: oblique;
   font-size: 17px;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -101,13 +100,12 @@ button:hover {
 data {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin-top: 50px;
   height: 50%;
   weight: 50%;
 }
 
 img {
-  height: 80%;
-  weight: 80%;
+  height: 100%;
+  weight: 100%;
 }
