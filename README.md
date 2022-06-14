@@ -6,7 +6,7 @@ This project was to create a rock paper scissors game that would rely on a user 
 The project spec & rubric can be found [here!](https://frontend.turing.edu/projects/module-1/rock-paper-scissors-solo-v2.html)
 
 ## Deployed Page
-Visit the published site [site!](https://Crpearce.github.io/rock-paper-scissors/)
+Visit the published [site!](https://Crpearce.github.io/rock-paper-scissors/)
 
 ## Features
 
