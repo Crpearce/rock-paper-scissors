@@ -18,15 +18,18 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
+  text-shadow: 2px 2px white;
 }
 
 h2 {
+  color: white;
+  text-shadow: 3px 3px 5px #000000;
   font-size: 30px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 aside {
@@ -60,6 +63,21 @@ aside {
   overflow: auto;
 }
 
+.human-container {
+  border-right-style: solid;
+}
+
+.computer-container {
+  border-left-style: solid;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30%;
+  overflow: auto;
+}
+
 button {
   display: block;
   height: 185px;
@@ -78,21 +96,6 @@ button:hover {
   border: #ff7a59 solid 1px;
   background: #000000;
   transition: all 0.3s ease;
-}
-
-.human-container {
-  border-right-style: solid;
-}
-
-.computer-container {
-  border-left-style: solid;
-}
-
-.icon-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 30%;
-  overflow: auto;
 }
 
 data {

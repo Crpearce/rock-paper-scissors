@@ -30,7 +30,7 @@ class Game {
       console.log('loser')
       this.winner = this.players[1].name
     }
-  showResultDisplay();
+  showResultDisplay()
   }
   changeGameDisplay() {
     resetGame()
