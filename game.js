@@ -24,13 +24,16 @@ class Game {
     ) {
       this.players[0].wins++
       console.log('winning selection')
-     this.winner = this.players[0].name
+      this.winner = this.players[0].name
     } else {
       this.players[1].wins++
       console.log('loser')
-     this.winner = this.players[1].name
+      this.winner = this.players[1].name
     }
-    showResultDisplay();
+  showResultDisplay();
+  }
+  changeGameDisplay() {
+    resetGame()
   }
 }
 
