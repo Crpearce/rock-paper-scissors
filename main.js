@@ -151,7 +151,6 @@ function assignComputerChoice() {
   } else {
     game.players[1].choice = 'alien'
   }
-  console.log(game.players[1].choice)
 }
 
 function updateFighterChoice(e) {
@@ -204,6 +203,13 @@ function showWinner() {
   timeout()
 }
 
+function timeout() {
+  document.getElementById('mainScreen').style.pointerEvents = 'none'
+  var timeout = setTimeout(function() {
+    displayGameReset()
+  }, 2000)
+}
+
 function displayGameReset() {
   document.getElementById('mainScreen').style.pointerEvents = 'auto';
   if (game.skillLevel === 'classic') {
@@ -211,13 +217,6 @@ function displayGameReset() {
   } else {
     updateDifficultGame()
   }
-}
-
-function timeout() {
-  document.getElementById('mainScreen').style.pointerEvents = 'none';
-  var timeout = setTimeout(function() {
-    displayGameReset();
-  }, 2000);
 }
 
 function updateFighterText() {
