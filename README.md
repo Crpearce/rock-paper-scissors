@@ -16,7 +16,7 @@ Visit the published [site!](https://Crpearce.github.io/rock-paper-scissors/)
  ![Icon Choice](assets/chooseYourFighter.png)
  
  The user choice is compaired to the randomly generated computer "fighter" choice and a win is tallied for the user with the winning icon.  
- ![Icon Choice](assets/chooseYourFighter.png)
+ ![Winner Score](assets/humanScore.png)
 ## Contributors
 This website was built by a front end engineering student with the [Turing School of Software and Design](https://turing.edu/). 
   - [Colby Pearce](https://github.com/Crpearce)
