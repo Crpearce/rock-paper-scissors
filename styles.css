@@ -108,4 +108,6 @@ data {
 img {
   height: 100%;
   weight: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
